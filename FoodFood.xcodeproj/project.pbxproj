@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A14E6E811341204A00E62A5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E801341204A00E62A5E /* UIKit.framework */; };
+		A14E6E831341204A00E62A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E821341204A00E62A5E /* Foundation.framework */; };
+		A14E6E851341204A00E62A5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E841341204A00E62A5E /* CoreGraphics.framework */; };
+		A14E6E871341204A00E62A5E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E861341204A00E62A5E /* CoreData.framework */; };
+		A14E6E8D1341204A00E62A5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A14E6E8B1341204A00E62A5E /* InfoPlist.strings */; };
+		A14E6E901341204A00E62A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E6E8F1341204A00E62A5E /* main.m */; };
+		A14E6E931341204A00E62A5E /* FoodFoodAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E6E921341204A00E62A5E /* FoodFoodAppDelegate.m */; };
+		A14E6E961341204A00E62A5E /* FoodFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14E6E941341204A00E62A5E /* FoodFood.xcdatamodeld */; };
+		A14E6E991341204A00E62A5E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14E6E971341204A00E62A5E /* MainWindow.xib */; };
+		A14E6E9C1341204A00E62A5E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E6E9B1341204A00E62A5E /* RootViewController.m */; };
+		A14E6E9F1341204A00E62A5E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14E6E9D1341204A00E62A5E /* RootViewController.xib */; };
+		A14E6EA61341204A00E62A5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E801341204A00E62A5E /* UIKit.framework */; };
+		A14E6EA71341204A00E62A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E821341204A00E62A5E /* Foundation.framework */; };
+		A14E6EA81341204A00E62A5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E841341204A00E62A5E /* CoreGraphics.framework */; };
+		A14E6EA91341204A00E62A5E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E861341204A00E62A5E /* CoreData.framework */; };
+		A14E6EB11341204A00E62A5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A14E6EAF1341204A00E62A5E /* InfoPlist.strings */; };
+		A14E6EB41341204A00E62A5E /* FoodFoodTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A14E6EB31341204A00E62A5E /* FoodFoodTests.h */; };
+		A14E6EB61341204A00E62A5E /* FoodFoodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E6EB51341204A00E62A5E /* FoodFoodTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A14E6EAA1341204A00E62A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14E6E731341204900E62A5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14E6E7B1341204A00E62A5E;
+			remoteInfo = FoodFood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A14E6E7C1341204A00E62A5E /* FoodFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E6E801341204A00E62A5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A14E6E821341204A00E62A5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A14E6E841341204A00E62A5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A14E6E861341204A00E62A5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A14E6E8A1341204A00E62A5E /* FoodFood-Info.plist */ = {isa = PBXFileReference; path = "FoodFood-Info.plist"; sourceTree = "<group>"; };
+		A14E6E8C1341204A00E62A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A14E6E8E1341204A00E62A5E /* FoodFood-Prefix.pch */ = {isa = PBXFileReference; path = "FoodFood-Prefix.pch"; sourceTree = "<group>"; };
+		A14E6E8F1341204A00E62A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A14E6E911341204A00E62A5E /* FoodFoodAppDelegate.h */ = {isa = PBXFileReference; path = FoodFoodAppDelegate.h; sourceTree = "<group>"; };
+		A14E6E921341204A00E62A5E /* FoodFoodAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodFoodAppDelegate.m; sourceTree = "<group>"; };
+		A14E6E951341204A00E62A5E /* FoodFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodFood.xcdatamodel; sourceTree = "<group>"; };
+		A14E6E981341204A00E62A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A14E6E9A1341204A00E62A5E /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		A14E6E9B1341204A00E62A5E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A14E6E9E1341204A00E62A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		A14E6EA51341204A00E62A5E /* FoodFoodTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFoodTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14E6EAE1341204A00E62A5E /* FoodFoodTests-Info.plist */ = {isa = PBXFileReference; path = "FoodFoodTests-Info.plist"; sourceTree = "<group>"; };
+		A14E6EB01341204A00E62A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A14E6EB21341204A00E62A5E /* FoodFoodTests-Prefix.pch */ = {isa = PBXFileReference; path = "FoodFoodTests-Prefix.pch"; sourceTree = "<group>"; };
+		A14E6EB31341204A00E62A5E /* FoodFoodTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodFoodTests.h; sourceTree = "<group>"; };
+		A14E6EB51341204A00E62A5E /* FoodFoodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodFoodTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14E6E791341204A00E62A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E6E811341204A00E62A5E /* UIKit.framework in Frameworks */,
+				A14E6E831341204A00E62A5E /* Foundation.framework in Frameworks */,
+				A14E6E851341204A00E62A5E /* CoreGraphics.framework in Frameworks */,
+				A14E6E871341204A00E62A5E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14E6EA11341204A00E62A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E6EA61341204A00E62A5E /* UIKit.framework in Frameworks */,
+				A14E6EA71341204A00E62A5E /* Foundation.framework in Frameworks */,
+				A14E6EA81341204A00E62A5E /* CoreGraphics.framework in Frameworks */,
+				A14E6EA91341204A00E62A5E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A14E6E711341204900E62A5E = {
+			isa = PBXGroup;
+			children = (
+				A14E6E881341204A00E62A5E /* FoodFood */,
+				A14E6EAC1341204A00E62A5E /* FoodFoodTests */,
+				A14E6E7F1341204A00E62A5E /* Frameworks */,
+				A14E6E7D1341204A00E62A5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A14E6E7D1341204A00E62A5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14E6E7C1341204A00E62A5E /* FoodFood.app */,
+				A14E6EA51341204A00E62A5E /* FoodFoodTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14E6E7F1341204A00E62A5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A14E6E801341204A00E62A5E /* UIKit.framework */,
+				A14E6E821341204A00E62A5E /* Foundation.framework */,
+				A14E6E841341204A00E62A5E /* CoreGraphics.framework */,
+				A14E6E861341204A00E62A5E /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A14E6E881341204A00E62A5E /* FoodFood */ = {
+			isa = PBXGroup;
+			children = (
+				A14E6E911341204A00E62A5E /* FoodFoodAppDelegate.h */,
+				A14E6E921341204A00E62A5E /* FoodFoodAppDelegate.m */,
+				A14E6E971341204A00E62A5E /* MainWindow.xib */,
+				A14E6E9A1341204A00E62A5E /* RootViewController.h */,
+				A14E6E9B1341204A00E62A5E /* RootViewController.m */,
+				A14E6E9D1341204A00E62A5E /* RootViewController.xib */,
+				A14E6E941341204A00E62A5E /* FoodFood.xcdatamodeld */,
+				A14E6E891341204A00E62A5E /* Supporting Files */,
+			);
+			path = FoodFood;
+			sourceTree = "<group>";
+		};
+		A14E6E891341204A00E62A5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A14E6E8A1341204A00E62A5E /* FoodFood-Info.plist */,
+				A14E6E8B1341204A00E62A5E /* InfoPlist.strings */,
+				A14E6E8E1341204A00E62A5E /* FoodFood-Prefix.pch */,
+				A14E6E8F1341204A00E62A5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A14E6EAC1341204A00E62A5E /* FoodFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				A14E6EB31341204A00E62A5E /* FoodFoodTests.h */,
+				A14E6EB51341204A00E62A5E /* FoodFoodTests.m */,
+				A14E6EAD1341204A00E62A5E /* Supporting Files */,
+			);
+			path = FoodFoodTests;
+			sourceTree = "<group>";
+		};
+		A14E6EAD1341204A00E62A5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A14E6EAE1341204A00E62A5E /* FoodFoodTests-Info.plist */,
+				A14E6EAF1341204A00E62A5E /* InfoPlist.strings */,
+				A14E6EB21341204A00E62A5E /* FoodFoodTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14E6E7B1341204A00E62A5E /* FoodFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14E6EB91341204A00E62A5E /* Build configuration list for PBXNativeTarget "FoodFood" */;
+			buildPhases = (
+				A14E6E781341204A00E62A5E /* Sources */,
+				A14E6E791341204A00E62A5E /* Frameworks */,
+				A14E6E7A1341204A00E62A5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodFood;
+			productName = FoodFood;
+			productReference = A14E6E7C1341204A00E62A5E /* FoodFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A14E6EA41341204A00E62A5E /* FoodFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14E6EBC1341204A00E62A5E /* Build configuration list for PBXNativeTarget "FoodFoodTests" */;
+			buildPhases = (
+				A14E6EA01341204A00E62A5E /* Sources */,
+				A14E6EA11341204A00E62A5E /* Frameworks */,
+				A14E6EA21341204A00E62A5E /* Resources */,
+				A14E6EA31341204A00E62A5E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14E6EAB1341204A00E62A5E /* PBXTargetDependency */,
+			);
+			name = FoodFoodTests;
+			productName = FoodFoodTests;
+			productReference = A14E6EA51341204A00E62A5E /* FoodFoodTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14E6E731341204900E62A5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = andCulture;
+			};
+			buildConfigurationList = A14E6E761341204900E62A5E /* Build configuration list for PBXProject "FoodFood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A14E6E711341204900E62A5E;
+			productRefGroup = A14E6E7D1341204A00E62A5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14E6E7B1341204A00E62A5E /* FoodFood */,
+				A14E6EA41341204A00E62A5E /* FoodFoodTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14E6E7A1341204A00E62A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E6E8D1341204A00E62A5E /* InfoPlist.strings in Resources */,
+				A14E6E991341204A00E62A5E /* MainWindow.xib in Resources */,
+				A14E6E9F1341204A00E62A5E /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14E6EA21341204A00E62A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E6EB11341204A00E62A5E /* InfoPlist.strings in Resources */,
+				A14E6EB41341204A00E62A5E /* FoodFoodTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A14E6EA31341204A00E62A5E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14E6E781341204A00E62A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E6E901341204A00E62A5E /* main.m in Sources */,
+				A14E6E931341204A00E62A5E /* FoodFoodAppDelegate.m in Sources */,
+				A14E6E961341204A00E62A5E /* FoodFood.xcdatamodeld in Sources */,
+				A14E6E9C1341204A00E62A5E /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14E6EA01341204A00E62A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14E6EB61341204A00E62A5E /* FoodFoodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A14E6EAB1341204A00E62A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14E6E7B1341204A00E62A5E /* FoodFood */;
+			targetProxy = A14E6EAA1341204A00E62A5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A14E6E8B1341204A00E62A5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14E6E8C1341204A00E62A5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A14E6E971341204A00E62A5E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14E6E981341204A00E62A5E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A14E6E9D1341204A00E62A5E /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14E6E9E1341204A00E62A5E /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		A14E6EAF1341204A00E62A5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14E6EB01341204A00E62A5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A14E6EB71341204A00E62A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A14E6EB81341204A00E62A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A14E6EBA1341204A00E62A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodFood/FoodFood-Prefix.pch";
+				INFOPLIST_FILE = "FoodFood/FoodFood-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A14E6EBB1341204A00E62A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodFood/FoodFood-Prefix.pch";
+				INFOPLIST_FILE = "FoodFood/FoodFood-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A14E6EBD1341204A00E62A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoodFood.app/FoodFood";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodFoodTests/FoodFoodTests-Prefix.pch";
+				INFOPLIST_FILE = "FoodFoodTests/FoodFoodTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A14E6EBE1341204A00E62A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoodFood.app/FoodFood";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodFoodTests/FoodFoodTests-Prefix.pch";
+				INFOPLIST_FILE = "FoodFoodTests/FoodFoodTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14E6E761341204900E62A5E /* Build configuration list for PBXProject "FoodFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14E6EB71341204A00E62A5E /* Debug */,
+				A14E6EB81341204A00E62A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14E6EB91341204A00E62A5E /* Build configuration list for PBXNativeTarget "FoodFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14E6EBA1341204A00E62A5E /* Debug */,
+				A14E6EBB1341204A00E62A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A14E6EBC1341204A00E62A5E /* Build configuration list for PBXNativeTarget "FoodFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14E6EBD1341204A00E62A5E /* Debug */,
+				A14E6EBE1341204A00E62A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A14E6E941341204A00E62A5E /* FoodFood.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A14E6E951341204A00E62A5E /* FoodFood.xcdatamodel */,
+			);
+			currentVersion = A14E6E951341204A00E62A5E /* FoodFood.xcdatamodel */;
+			path = FoodFood.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A14E6E731341204900E62A5E /* Project object */;
+}

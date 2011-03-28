@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FoodFoodTests' target in the 'FoodFoodTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
