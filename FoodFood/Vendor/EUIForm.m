@@ -51,6 +51,7 @@
 #pragma mark Keyboard Methods
 
 - (void)keyboardToggle:(NSNotification *)notification { 
+    
 	CGRect keyboardFrame = [[notification.userInfo objectForKey: @"UIKeyboardBoundsUserInfoKey"] CGRectValue];
 	
 	if([notification.name isEqualToString:UIKeyboardWillShowNotification]) {

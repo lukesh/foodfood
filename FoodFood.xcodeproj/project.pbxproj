@@ -53,6 +53,7 @@
 		A19BFBF9134F4D0000C717FD /* EUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BFBDB134F4D0000C717FD /* EUITableViewController.m */; };
 		A19BFBFA134F4D0000C717FD /* EUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BFBDD134F4D0000C717FD /* EUIUtility.m */; };
 		A19BFBFB134F4D0000C717FD /* Unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = A19BFBDE134F4D0000C717FD /* Unchecked.png */; };
+		A19BFBFF134F7D8400C717FD /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BFBFE134F7D8400C717FD /* MainModel.m */; };
 		A1A88023134CF49300176BD3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DA239F134BD1ED00E476B8 /* CFNetwork.framework */; };
 		A1A88024134CF4A100176BD3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DA23A4134BD20F00E476B8 /* MobileCoreServices.framework */; };
 		A1A88025134CF4B000176BD3 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DA23A6134BD23700E476B8 /* libz.1.2.3.dylib */; };
@@ -146,6 +147,8 @@
 		A19BFBDC134F4D0000C717FD /* EUIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIUtility.h; sourceTree = "<group>"; };
 		A19BFBDD134F4D0000C717FD /* EUIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIUtility.m; sourceTree = "<group>"; };
 		A19BFBDE134F4D0000C717FD /* Unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unchecked.png; sourceTree = "<group>"; };
+		A19BFBFD134F7D8400C717FD /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		A19BFBFE134F7D8400C717FD /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		A1A88026134CF4F900176BD3 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		A1A88027134CF4F900176BD3 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		A1A88028134CF4F900176BD3 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				A14E6E941341204A00E62A5E /* FoodFood.xcdatamodeld */,
+				A19BFBFD134F7D8400C717FD /* MainModel.h */,
+				A19BFBFE134F7D8400C717FD /* MainModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -268,9 +273,9 @@
 		A14E6E881341204A00E62A5E /* FoodFood */ = {
 			isa = PBXGroup;
 			children = (
+				A11D3DA8134E2FA500ED284A /* Models */,
 				A11D3DAA134E2FB500ED284A /* Views */,
 				A11D3DA9134E2FAB00ED284A /* Controllers */,
-				A11D3DA8134E2FA500ED284A /* Models */,
 				A14E6E911341204A00E62A5E /* FoodFoodAppDelegate.h */,
 				A14E6E921341204A00E62A5E /* FoodFoodAppDelegate.m */,
 				A14E6E891341204A00E62A5E /* Supporting Files */,
@@ -341,6 +346,8 @@
 		A19BFBFC134F4D1100C717FD /* EUI */ = {
 			isa = PBXGroup;
 			children = (
+				A19BFBCC134F4D0000C717FD /* EUIFormSampleObject.h */,
+				A19BFBCD134F4D0000C717FD /* EUIFormSampleObject.m */,
 				A19BFBB0134F4D0000C717FD /* Checked.png */,
 				A19BFBB1134F4D0000C717FD /* EUIActivityIndicatorView */,
 				A19BFBBC134F4D0000C717FD /* EUIForm.h */,
@@ -359,8 +366,6 @@
 				A19BFBC9134F4D0000C717FD /* EUIFormHighlight.png */,
 				A19BFBCA134F4D0000C717FD /* EUIFormSample.h */,
 				A19BFBCB134F4D0000C717FD /* EUIFormSample.m */,
-				A19BFBCC134F4D0000C717FD /* EUIFormSampleObject.h */,
-				A19BFBCD134F4D0000C717FD /* EUIFormSampleObject.m */,
 				A19BFBCE134F4D0000C717FD /* EUIFormStringsEditor.h */,
 				A19BFBCF134F4D0000C717FD /* EUIFormStringsEditor.m */,
 				A19BFBD0134F4D0000C717FD /* EUIFormTextEditor.h */,
@@ -543,6 +548,7 @@
 				A19BFBF8134F4D0000C717FD /* EUIPrompt.m in Sources */,
 				A19BFBF9134F4D0000C717FD /* EUITableViewController.m in Sources */,
 				A19BFBFA134F4D0000C717FD /* EUIUtility.m in Sources */,
+				A19BFBFF134F7D8400C717FD /* MainModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

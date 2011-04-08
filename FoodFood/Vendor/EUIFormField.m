@@ -470,6 +470,8 @@
 			}
 			default: {
 				self.control = [[UITextField alloc] init];
+                // OS X Lion simulator bug.
+                ((UITextField*)self.control).autocorrectionType = UITextAutocorrectionTypeNo;
 				((UITextField*)self.control).font = self.controlFont;
 				((UILabel*)self.control).textColor = self.controlColor;
 				((UILabel*)self.control).textAlignment = self.controlAlignment;
