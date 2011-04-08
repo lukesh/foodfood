@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface WelcomeController : UIViewController {
- 
 }
 
 @property (nonatomic, retain) IBOutlet UIButton* go;

@@ -8,18 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "EUIForm.h"
-#import "EditableCell.h"
 #import "EUIFormSampleObject.h"
 
 @interface MainForm : EUIForm {
-    Boolean keyboardIsShowing;
-    CGRect keyboardBounds;
-    EUIFormSampleObject* object;
+    EUIFormSampleObject* form;
 }
 
-@property (nonatomic, retain) IBOutlet UIButton * goButton;
+@property (nonatomic, retain) IBOutlet UIButton * go;
 
-- (IBAction)goButtonOnClick:(id)sender;
-- (void)resizeViewControllerToFitScreen;
+- (IBAction)goClick:(id)sender;
 
 @end

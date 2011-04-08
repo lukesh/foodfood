@@ -11,7 +11,6 @@
 		A11D3DAF134E333A00ED284A /* WelcomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11D3DAD134E333A00ED284A /* WelcomeController.xib */; };
 		A11D3DB3134E357400ED284A /* MainForm.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D3DB1134E357400ED284A /* MainForm.m */; };
 		A11D3DB4134E357400ED284A /* MainForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11D3DB2134E357400ED284A /* MainForm.xib */; };
-		A11D3DB7134E3F9600ED284A /* EditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A11D3DB6134E3F9600ED284A /* EditableCell.m */; };
 		A14E6E811341204A00E62A5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E801341204A00E62A5E /* UIKit.framework */; };
 		A14E6E831341204A00E62A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E821341204A00E62A5E /* Foundation.framework */; };
 		A14E6E851341204A00E62A5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E841341204A00E62A5E /* CoreGraphics.framework */; };
@@ -25,8 +24,6 @@
 		A14E6EA71341204A00E62A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E821341204A00E62A5E /* Foundation.framework */; };
 		A14E6EA81341204A00E62A5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E841341204A00E62A5E /* CoreGraphics.framework */; };
 		A14E6EA91341204A00E62A5E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14E6E861341204A00E62A5E /* CoreData.framework */; };
-		A196E537134E4AA90001E20E /* EditableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A196E536134E4AA90001E20E /* EditableCell.xib */; };
-		A196E53B134E50E70001E20E /* FormSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A196E53A134E50E70001E20E /* FormSingleton.m */; };
 		A19BFBDF134F4D0000C717FD /* Checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A19BFBB0134F4D0000C717FD /* Checked.png */; };
 		A19BFBE0134F4D0000C717FD /* EUIActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BFBB3134F4D0000C717FD /* EUIActivityIndicatorView.m */; };
 		A19BFBE1134F4D0000C717FD /* PieSpinner1.png in Resources */ = {isa = PBXBuildFile; fileRef = A19BFBB4134F4D0000C717FD /* PieSpinner1.png */; };
@@ -89,8 +86,6 @@
 		A11D3DB0134E357400ED284A /* MainForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainForm.h; sourceTree = "<group>"; };
 		A11D3DB1134E357400ED284A /* MainForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainForm.m; sourceTree = "<group>"; };
 		A11D3DB2134E357400ED284A /* MainForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainForm.xib; sourceTree = "<group>"; };
-		A11D3DB5134E3F9600ED284A /* EditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCell.h; sourceTree = "<group>"; };
-		A11D3DB6134E3F9600ED284A /* EditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCell.m; sourceTree = "<group>"; };
 		A14E6E7C1341204A00E62A5E /* FoodFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14E6E801341204A00E62A5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A14E6E821341204A00E62A5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,9 +100,6 @@
 		A14E6E951341204A00E62A5E /* FoodFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodFood.xcdatamodel; sourceTree = "<group>"; };
 		A14E6E981341204A00E62A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		A14E6EA51341204A00E62A5E /* FoodFoodTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFoodTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A196E536134E4AA90001E20E /* EditableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCell.xib; sourceTree = "<group>"; };
-		A196E539134E50E70001E20E /* FormSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSingleton.h; sourceTree = "<group>"; };
-		A196E53A134E50E70001E20E /* FormSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSingleton.m; sourceTree = "<group>"; };
 		A19BFBB0134F4D0000C717FD /* Checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checked.png; sourceTree = "<group>"; };
 		A19BFBB2134F4D0000C717FD /* EUIActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUIActivityIndicatorView.h; sourceTree = "<group>"; };
 		A19BFBB3134F4D0000C717FD /* EUIActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUIActivityIndicatorView.m; sourceTree = "<group>"; };
@@ -217,8 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				A14E6E941341204A00E62A5E /* FoodFood.xcdatamodeld */,
-				A196E539134E50E70001E20E /* FormSingleton.h */,
-				A196E53A134E50E70001E20E /* FormSingleton.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -237,8 +227,6 @@
 		A11D3DAA134E2FB500ED284A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A11D3DB5134E3F9600ED284A /* EditableCell.h */,
-				A11D3DB6134E3F9600ED284A /* EditableCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -294,7 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				A14E6E971341204A00E62A5E /* MainWindow.xib */,
-				A196E536134E4AA90001E20E /* EditableCell.xib */,
 				A11D3DB2134E357400ED284A /* MainForm.xib */,
 				A11D3DAD134E333A00ED284A /* WelcomeController.xib */,
 				A14E6E8A1341204A00E62A5E /* FoodFood-Info.plist */,
@@ -480,7 +467,6 @@
 				A14E6E991341204A00E62A5E /* MainWindow.xib in Resources */,
 				A11D3DAF134E333A00ED284A /* WelcomeController.xib in Resources */,
 				A11D3DB4134E357400ED284A /* MainForm.xib in Resources */,
-				A196E537134E4AA90001E20E /* EditableCell.xib in Resources */,
 				A19BFBDF134F4D0000C717FD /* Checked.png in Resources */,
 				A19BFBE1134F4D0000C717FD /* PieSpinner1.png in Resources */,
 				A19BFBE2134F4D0000C717FD /* PieSpinner2.png in Resources */,
@@ -540,8 +526,6 @@
 				A1A88044134CF53E00176BD3 /* Reachability.m in Sources */,
 				A11D3DAE134E333A00ED284A /* WelcomeController.m in Sources */,
 				A11D3DB3134E357400ED284A /* MainForm.m in Sources */,
-				A11D3DB7134E3F9600ED284A /* EditableCell.m in Sources */,
-				A196E53B134E50E70001E20E /* FormSingleton.m in Sources */,
 				A19BFBE0134F4D0000C717FD /* EUIActivityIndicatorView.m in Sources */,
 				A19BFBE9134F4D0000C717FD /* EUIForm.m in Sources */,
 				A19BFBEB134F4D0000C717FD /* EUIFormDatePicker.m in Sources */,
