@@ -8,7 +8,9 @@
 
 #import "FoodFoodAppDelegate.h"
 
-#import "RootViewController.h"
+#import "WelcomeController.h"
+
+#import "ASIHTTPRequest.h"
 
 @implementation FoodFoodAppDelegate
 
@@ -28,6 +30,11 @@
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
+    WelcomeController* welcome = [[WelcomeController alloc] init]; // [WelcomeController new]
+    
+    [self.navigationController setViewControllers:[NSArray arrayWithObject:welcome]];
+    [welcome release];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -80,8 +87,42 @@
 
 - (void)awakeFromNib
 {
-    RootViewController *rootViewController = (RootViewController *)[self.navigationController topViewController];
-    rootViewController.managedObjectContext = self.managedObjectContext;
+    
+    NSLog(@"The app is awake.");
+
+    [self grabURL];
+}
+
+- (void)grabURL
+{
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/products.json"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    
+}
+- (IBAction)grabURLInBackground:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    // Use when fetching text data
+    NSString *responseString = [request responseString];
+    
+    NSLog(responseString);
+    
+    // Use when fetching binary data
+    //NSData *responseData = [request responseData];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
 }
 
 - (void)saveContext
