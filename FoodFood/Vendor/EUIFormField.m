@@ -65,7 +65,8 @@
 #pragma mark Initialization
 
 -(id)init{
-	if(self = [super init]) {
+    self = [super init];
+	if(self) {
 		self.labelColor = nil;
 		self.controlColor = nil;
 		self.highlightColor = nil;
@@ -276,25 +277,25 @@
 	return o;
 }
 
--(id)value{
-	if(self.object != nil && self.property != nil) {
-		id anotherValue = nil;
-		if([self.object isKindOfClass:[NSDictionary class]]) {
-			anotherValue = [(NSDictionary*)self.object objectForKey:self.property];
-		} else {
-			SEL getter = NSSelectorFromString(self.property);
-			if([self.object respondsToSelector:getter]) {
-				anotherValue = [self.object performSelector:getter];
-			}
-		}
-		if(_value != anotherValue) {
-			[_value release];
-			[anotherValue retain];
-			_value = anotherValue;
-		}
-	}
-	return _value;
-}
+//-(id)value{
+//	if(self.object != nil && self.property != nil) {
+//		id anotherValue = nil;
+//		if([self.object isKindOfClass:[NSDictionary class]]) {
+//			anotherValue = [(NSDictionary*)self.object objectForKey:self.property];
+//		} else {
+//			SEL getter = NSSelectorFromString(self.property);
+//			if([self.object respondsToSelector:getter]) {
+//				anotherValue = [self.object performSelector:getter];
+//			}
+//		}
+//		if(_value != anotherValue) {
+//			[_value release];
+//			[anotherValue retain];
+//			_value = anotherValue;
+//		}
+//	}
+//	return _value;
+//}
 
 -(NSString*)html {
 	if(self.showLabel && self.name != nil) {
@@ -917,9 +918,6 @@
 				// Set the value as a boolean if it's a switch
 			} else if([self.control isKindOfClass:[UISwitch class]]) {
                 bool boolValue = [self.object performSelector:getter];
-                NSLog(@"BOOL VALUE IS A %i", boolValue);
-               // NSLog(@"GETTER VALUE IS A %@", getter);
-
                 ((UISwitch*)self.control).on = boolValue;
 
 				
@@ -971,7 +969,7 @@
 					// As a string...
 				} else {
 					id value = [self.object performSelector:getter];
-					_value = value;
+					_value = [value retain];
 					if(value == nil) {
 						((UITextField*)self.control).text = @"";
 					} else {
@@ -1012,7 +1010,7 @@
 					}
 				} else {
 					id value = [self.object performSelector:getter];
-					_value = value;
+					_value = [value retain];
 					NSString* text = [EUIFormField getString:value forField:self];
 					if(text != nil) {
 						((UILabel*)self.control).text = text;
@@ -1227,6 +1225,8 @@
 }
 
 -(void)updateDataSourceValue:(id)value{
+    NSLog(@"Value is a %@", value);
+    
 	if(self.object == nil) {
 		self.object = [NSMutableDictionary dictionary];
 	}
@@ -1323,6 +1323,8 @@
 				((UITextView*)self.control).text = [NSString stringWithFormat:@"%i", self.maxLength];
 				return;
 			}
+            
+            NSLog(@"Self datatype is %@", self.dataType);
 			
 			if([self.dataType isEqualToString: @"i"]) {
 				int intValue = [stringValue intValue];
