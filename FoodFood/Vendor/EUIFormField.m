@@ -167,7 +167,7 @@
 		if(property!=nil) {
 			NSString* attributes = [NSString stringWithCString: property_getAttributes(property) encoding: NSASCIIStringEncoding];
 			NSArray* a = [attributes componentsSeparatedByString:@","];
-			_dataType = [[a objectAtIndex:0] substringFromIndex:1];
+			_dataType = [[[a objectAtIndex:0] substringFromIndex:1] retain];
 		}
 	}
 	return _dataType;
@@ -1225,8 +1225,6 @@
 }
 
 -(void)updateDataSourceValue:(id)value{
-    NSLog(@"Value is a %@", value);
-    
 	if(self.object == nil) {
 		self.object = [NSMutableDictionary dictionary];
 	}
