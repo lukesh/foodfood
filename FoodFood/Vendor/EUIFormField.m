@@ -916,18 +916,12 @@
 				
 				// Set the value as a boolean if it's a switch
 			} else if([self.control isKindOfClass:[UISwitch class]]) {
-				id boolValue = [self.object performSelector:getter];
-				if([boolValue isKindOfClass:[NSString class]]) {
-					BOOL on = NO;
-					if([boolValue length] > 0) { on = [boolValue boolValue]; }
-					_value = [NSNumber numberWithBool:on];
-				} else if([boolValue isKindOfClass:[NSNumber class]] == NO) {
-					_value = [NSNumber numberWithBool:(BOOL)boolValue];
-				} else {
-					_value = boolValue;
-				}
-				BOOL on = [_value boolValue];
-				((UISwitch*)self.control).on = on;
+                bool boolValue = [self.object performSelector:getter];
+                NSLog(@"BOOL VALUE IS A %i", boolValue);
+               // NSLog(@"GETTER VALUE IS A %@", getter);
+
+                ((UISwitch*)self.control).on = boolValue;
+
 				
 				// Set the value as a string if it's a text view
 			} else if([self.control isKindOfClass:[UITextView class]]) {
